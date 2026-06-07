@@ -51,7 +51,7 @@ export default function Navigation() {
             onClick={(e) => handleScroll(e, 'gallery')}
             className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-200"
           >
-            Tus Fotos
+            Nuestras Fotos
           </a>
           <a 
             href="#amor" 

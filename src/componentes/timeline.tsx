@@ -40,10 +40,10 @@ const TimelineEntry = memo(function TimelineEntry({
 export default function Timeline() {
   const memories = [
     {
-      date: "Septiembre 09, 2025",
+      date: "Septiembre 07, 2025",
       title: "Primer día juntos",
       description:
-        "A moment that changed everything. The day we met and our hearts found their match. Time seemed to stop, and I knew right then that you were someone extraordinary.",
+        "El día que en el que te pedí que fueras mi novia, el día que nos convertimos en novios, la primera vez que te arme un ramo de lirios. Estuve nervioso ese día pero también muy feliz, porque sabía que estaba dando un paso importante con la persona que amo. Ese día marcó el comienzo de nuestra hermosa historia juntos.",
     },
     {
       date: "Septiembre 07, 2025",
