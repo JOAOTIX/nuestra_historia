@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero.png';
+
 export default function Hero({ isLoaded }: { isLoaded: boolean }) {
   return (
     <section className="min-h-screen w-full bg-gradient-to-br from-background via-background to-accent/10 pt-20 flex items-center justify-center relative overflow-hidden">
@@ -12,10 +14,7 @@ export default function Hero({ isLoaded }: { isLoaded: boolean }) {
             <div className="relative w-full max-w-md mx-auto aspect-square rounded-3xl overflow-hidden shadow-soft-xl bg-gradient-to-br from-primary/20 to-accent/20">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
               <div className="absolute inset-0 flex items-center justify-center backdrop-blur-sm">
-                <div className="text-center space-y-2">
-                  <div className="text-6xl">📸</div>
-                  <p className="text-foreground/50 font-serif text-lg">Your Photo Here</p>
-                </div>
+                <img src={heroImage} alt="Hero" className="w-full h-full object-cover" />
               </div>
               {/* Soft glow effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
