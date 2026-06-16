@@ -46,22 +46,22 @@ export default function Timeline() {
         "El día que en el que te pedí que fueras mi novia, el día que nos convertimos en novios, la primera vez que te arme un ramo de lirios. Estuve nervioso ese día pero también muy feliz, porque sabía que estaba dando un paso importante con la persona que amo. Ese día marcó el comienzo de nuestra hermosa historia juntos.",
     },
     {
-      date: "Septiembre 07, 2025",
-      title: "Primer día juntos",
+      date: "Diciembre 09, 2025",
+      title: "El ramo de Lirios",
       description:
-        "Our first road trip together, filled with laughter, spontaneous stops, and the kind of conversations that make you realize you've found your person. Every mile felt like a memory being made.",
+        "El día que te arme un ramo de lirios, me encanto poder ver esa sonrisa tan preciosa que tienes mi corazoncito fue un excelente día, te lo arme con mucho amor y me sneti tan bien de poder darte algo que te gustara y que te hiciera inmensamente feliz, fue lo mejor poder estar a tu lado ese día y poder compartir ese momento tan especial contigo, espero poder seguir compartiendo momentos tan hermosos como ese a tu lado mi vida. Te amo mucho mi corazoncito.",
     },
     {
-      date: "December 2026",
-      title: "Winter Magic",
+      date: "Marzo 17, 2026",
+      title: "Cumpleaños de tu noviecito",
       description:
-        "Holiday season with you was pure magic. The snow, the lights, your smile—everything felt like a scene from a romantic movie. I fell even deeper in love with you.",
+        "El día en el cual celebramos mi cumpleaños y pude presentarte a mi familia materna, fue muy importante para mí que pudieras conocer a las personas que han sido importantes en mi vida, y me alegra mucho que hayas podido compartir ese momento tan especial conmigo. Fue un día lleno de alegría, risas y amor, y estoy muy agradecido de haberlo vivido a tu lado.",
     },
     {
-      date: "March 2026",
-      title: "Growing Together",
+      date: "Junio 17, 2026",
+      title: "Tu cumpleaños mi amor",
       description:
-        "We've learned so much about each other, supporting each other's dreams and celebrating victories both big and small. Our love keeps growing stronger with every passing day.",
+        "Tu cumpleaños mi bb, el día en el que te di una sorpresa y te pude dar cartitas hechas a puño y mi letra fea jsjsjs, me encanto pasar poder estar presente esta vez en tu cumpleaños en el cual pudimos celebrar juntos y seguir compartiendo momentos especiales a tu lado mi corazoncito, espero que podamos seguir celebrando muchos cumpleaños más juntos y creando recuerdos inolvidables.",
     },
   ];
 
