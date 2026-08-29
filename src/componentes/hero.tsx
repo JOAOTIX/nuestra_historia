@@ -1,4 +1,3 @@
-import heroImage from '../assets/hero.png';
 
 export default function Hero({ isLoaded }: { isLoaded: boolean }) {
   return (
@@ -14,7 +13,7 @@ export default function Hero({ isLoaded }: { isLoaded: boolean }) {
             <div className="relative w-full max-w-md mx-auto aspect-square rounded-3xl overflow-hidden shadow-soft-xl bg-gradient-to-br from-primary/20 to-accent/20">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
               <div className="absolute inset-0 flex items-center justify-center backdrop-blur-sm">
-                <img src={heroImage} alt="Hero" className="w-full h-full object-cover" />
+                <img src={"https://res.cloudinary.com/dcezpnhfc/image/upload/v1787969768/IMG-20260111-WA0012_eobhaz.jpg"} alt="Hero" className="w-full h-full object-cover " />
               </div>
               {/* Soft glow effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

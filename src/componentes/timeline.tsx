@@ -1,13 +1,16 @@
 import { memo } from "react";
 
+// 1. Agregamos 'image' a las propiedades que recibe el componente
 const TimelineEntry = memo(function TimelineEntry({
   date,
   title,
   description,
+  image, // <- Nueva propiedad
 }: {
   date: string;
   title: string;
   description: string;
+  image: string; // <- Nueva propiedad
   index: number;
 }) {
   return (
@@ -21,7 +24,12 @@ const TimelineEntry = memo(function TimelineEntry({
 
         {/* Image placeholder */}
         <div className="w-full aspect-video rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 mb-6 overflow-hidden flex items-center justify-center backdrop-blur-sm">
-          <div className="text-4xl">📸</div>
+          {/* 2. Cambiamos el link fijo por la variable 'image' */}
+          <img 
+            src={image} 
+            alt={title} 
+            className="w-full h-full object-cover" 
+          />
         </div>
 
         {/* Content */}
@@ -44,24 +52,28 @@ export default function Timeline() {
       title: "Primer día juntos",
       description:
         "El día que en el que te pedí que fueras mi novia, el día que nos convertimos en novios, la primera vez que te arme un ramo de lirios. Estuve nervioso ese día pero también muy feliz, porque sabía que estaba dando un paso importante con la persona que amo. Ese día marcó el comienzo de nuestra hermosa historia juntos.",
+      image: "https://res.cloudinary.com/dcezpnhfc/image/upload/v1787969770/IMG_20250629_181821_jur5d6.jpg" 
     },
     {
       date: "Diciembre 09, 2025",
       title: "El ramo de Lirios",
       description:
         "El día que te arme un ramo de lirios, me encanto poder ver esa sonrisa tan preciosa que tienes mi corazoncito fue un excelente día, te lo arme con mucho amor y me sneti tan bien de poder darte algo que te gustara y que te hiciera inmensamente feliz, fue lo mejor poder estar a tu lado ese día y poder compartir ese momento tan especial contigo, espero poder seguir compartiendo momentos tan hermosos como ese a tu lado mi vida. Te amo mucho mi corazoncito.",
+      image: "https://res.cloudinary.com/dcezpnhfc/image/upload/v1787969768/IMG-20251209-WA0059_s60tjd.jpg" // REEMPLAZA ESTO
     },
     {
       date: "Marzo 17, 2026",
       title: "Cumpleaños de tu noviecito",
       description:
         "El día en el cual celebramos mi cumpleaños y pude presentarte a mi familia materna, fue muy importante para mí que pudieras conocer a las personas que han sido importantes en mi vida, y me alegra mucho que hayas podido compartir ese momento tan especial conmigo. Fue un día lleno de alegría, risas y amor, y estoy muy agradecido de haberlo vivido a tu lado.",
+      image: "https://res.cloudinary.com/dcezpnhfc/image/upload/v1787969769/IMG-20260318-WA0124_vfz2kd.jpg" // REEMPLAZA ESTO
     },
     {
       date: "Junio 17, 2026",
       title: "Tu cumpleaños mi amor",
       description:
         "Tu cumpleaños mi bb, el día en el que te di una sorpresa y te pude dar cartitas hechas a puño y mi letra fea jsjsjs, me encanto pasar poder estar presente esta vez en tu cumpleaños en el cual pudimos celebrar juntos y seguir compartiendo momentos especiales a tu lado mi corazoncito, espero que podamos seguir celebrando muchos cumpleaños más juntos y creando recuerdos inolvidables.",
+      image: "https://res.cloudinary.com/dcezpnhfc/image/upload/v1787969769/IMG_20260617_222939_omldym.jpg" // REEMPLAZA ESTO
     },
   ];
 
@@ -96,6 +108,7 @@ export default function Timeline() {
                   date={memory.date}
                   title={memory.title}
                   description={memory.description}
+                  image={memory.image} 
                   index={index}
                 />
               </div>
