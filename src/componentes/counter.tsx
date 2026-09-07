@@ -23,8 +23,8 @@ const TimeUnit = ({ value, label }: { value: number; label: string }) => (
 export default function Counter() {
   const [time, setTime] = useState<TimeUnits>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  useEffect(() => {
-    const startDate = new Date('2025-09-07').getTime();
+useEffect(() => {
+    const startDate = new Date(2025, 8, 7).getTime();
 
     const calculateTime = () => {
       const now = new Date().getTime();
