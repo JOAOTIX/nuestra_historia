@@ -28,28 +28,16 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-background/70 border-b border-primary/50 transition-all duration-300">
-      {/* 
-        Cambios aquí: 
-        1. flex-col para móviles, md:flex-row para PC.
-        2. gap-4 para separar arriba y abajo en móviles. 
-      */}
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
         
         <button 
           onClick={toggleTheme}
-          // Cambié text-2xl a texto un poco más pequeño en móviles (text-xl) para que encaje mejor
-          className="font-serif text-xl md:text-2xl font-bold text-primary tracking-tight hover:opacity-80 transition-opacity cursor-pointer text-center"
+          className="font-serif text-xl md:text-2xl font-bold text-primary tracking-tight hover:opacity-80 transition-opacity cursor-pointer text-center mt-2"
           title="Alternar tema"
         >
           {isDarkMode ? 'Cambiar a claro ✨' : 'Cambiar a oscuro 🌙'}
         </button>
         
-        {/* 
-          Cambios aquí: 
-          1. flex-wrap por si los enlaces no caben en pantallas muy pequeñas.
-          2. gap-4 en móviles, md:gap-8 en PC. 
-          3. justify-center para que queden centrados.
-        */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 items-center">
           <a 
             href="#historia" 
